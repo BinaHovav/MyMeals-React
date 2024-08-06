@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5dad2;
+  color: #333;
+}
+
+.container {
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 1200px;
+  background: #fcffe0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  .calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    th,
+    td {
+      border: 1px solid #dddddd;
+      text-align: center;
+      padding: 15px;
+    }
+    .table-header-cell {
+      background-color: #75a47f;
+      color: #ffffff;
+      font-weight: bold;
+    }
+  }
+  .table-cell {
+    background-color: #f9f9f9;
+    &:nth-child(even) {
+      background-color: #bacd92;
+    }
+    &:nth-child(odd) {
+      background-color: #d1e6a6;
+    }
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #dddddd;
+      border-radius: 4px;
+      font-size: 14px;
+      background: #ffffff;
+      resize: vertical;
+      &:focus {
+        border-color: #007bff;
+        outline: none;
+        background: #e9f5ff;
+      }
+    }
+  }
+}
